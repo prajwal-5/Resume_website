@@ -1,0 +1,37 @@
+{% extends 'core/base.html' %} {% load static %} {% block content %}
+<div class="mt-5">
+  <div class="text-center">
+    <img
+      src="{% static 'core/images/Photo.jpg' %}"
+      alt="ProfilePic"
+      width="250px"
+      height="150px"
+      class="img-thumbnail"
+    />
+  </div>
+
+  <div class="mt-5 text-white mx-5" style="text-align: justify">
+    <h1 class="font-weight-bold newfont">Hello,</h1>
+    <div class="px-4" style="line-height: 2rem">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem sapiente
+        aperiam omnis rerum optio soluta a alias quod consequatur nihil numquam
+        quasi provident ex, dolorum eaque non incidunt beatae facere! 1 b random
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi
+        praesentium cum quae, facere impedit doloremque neque consequuntur, in
+        est repellendus, obcaecati laboriosam ullam ipsa minima tempora
+        molestias laborum explicabo vero. Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. Rem sapiente aperiam omnis rerum optio soluta a alias
+      </p>
+    </div>
+  </div>
+  <div class="text-center">
+    <a href="{% url 'contact' %}" class="btn btn-outline-warning my-3 mx-5"
+      >Hire me</a
+    >
+    <a href="{% url 'contact' %}" class="btn btn-outline-info my-3 mx-5 my-3"
+      >Contact me</a
+    >
+  </div>
+</div>
+{% endblock content %}
