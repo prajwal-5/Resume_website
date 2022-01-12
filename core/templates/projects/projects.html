@@ -1,0 +1,63 @@
+{% extends 'core/base.html' %} 
+{% load static %} 
+
+{% block content %}
+
+<div class="container mt-3">
+  <h1 class="text-warning mb-5 border-bottom">Projects</h1>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-4 my-5">
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top" src="{% static 'core/images/todo-list.png' %}" alt="todo-cli project image">
+          <div class="card-body bg-dark text-white">
+            <h5 class="card-title">TODO-CLI</h5>
+            <p class="card-text"> <strong>Tools: C++, Node.js, Npm, Bash</strong></p>
+            <p class="card-text">A Command line based todo app for taking care of your do's and dont's just a command away.</p>
+            <a href="https://github.com/prajwal-5/Todo-CLI" target="_blank" class="btn btn-primary">Checkout</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-4 my-5">
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top" src="{% static 'core/images/blog.png' %}" alt="Blog project image">
+          <div class="card-body bg-dark text-white">
+            <h5 class="card-title">Blog</h5>
+            <p class="card-text"> <strong>Tools: Django, Python, SQL, Bash, PIP, Html, CSS, Bootstrap...</strong></p>
+            <p class="card-text">A blog application to share your thoughts with the world just a click away.</p>
+            <a href="https://github.com/prajwal-5/blog" target="_blank" class="btn btn-primary">Checkout</a>
+          </div>
+        </div>      
+      </div>
+      
+      <div class="col-sm-4 my-5">
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top" src="{% static 'core/images/eresume.png' %}" alt="E-Resume project image">
+          <div class="card-body bg-dark text-white">
+            <h5 class="card-title">Web Resume</h5>
+            <p class="card-text"> <strong>Tools: Django, Python, SQL, Bash, PIP, Html, CSS, Bootstrap...</strong></p>
+            <p class="card-text">A platform to showcase my skills to the world. Hope you are enjoying my work!</p>
+            <a href="https://github.com/prajwal-5/Resume_website" target="_blank" class="btn btn-primary">Checkout</a>
+          </div>
+        </div>      
+      </div>
+
+      <div class="row">
+        <div class="col-sm-4 my-5">
+          <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="{% static 'core/images/webpages.png' %}" alt="Webpages project image">
+            <div class="card-body bg-dark text-white">
+              <h5 class="card-title">Webpages</h5>
+              <p class="card-text"> <strong>Tools: Html, CSS and Javascript</strong></p>
+              <p class="card-text">Responsive webpages which kickstrated my web devlopment journey.</p>
+              <a href="https://github.com/prajwal-5/Webpages" target="_blank" class="btn btn-primary">Checkout</a>
+            </div>
+          </div>
+        </div>
+      </div>  
+
+</div> 
+
+{% endblock content %}

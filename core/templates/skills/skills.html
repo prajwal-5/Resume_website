@@ -1,0 +1,40 @@
+{% extends 'core/base.html' %} {% load static %} {% block content %}
+
+<div class="container mt-3">
+  <h1 class="text-warning mb-5 border-bottom">Skills and Interests</h1>
+
+<div class="mx-5 my-5 d-flex justify-content-center">
+  <table class="table table-dark table-striped table-responsive" style="width: 80%;">
+    <thead>
+  <tr>
+    <th scope="col">Category</th>
+    <th scope="col">Skills</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>Languages </td>
+    <td><strong>C, C++, Javascript, Python</strong> </td>
+  </tr>
+  <tr>
+    <td>Web Dev </td>
+    <td><strong>HTML, CSS, Bootstrap, Django</strong> </td>
+  </tr>
+  <tr>
+    <td>Database </td>
+    <td><strong>SQL, MongoDB</strong> </td>
+  </tr>
+  <tr>
+    <td>Miscellaneous </td>
+    <td><strong>Git, Github, Bash, pip, npm</strong> </td>
+  </tr>
+  <tr>
+    <td>Interests </td>
+    <td><strong>Problem-solving, <a href="https://data.typeracer.com/pit/profile?user=prajwal_21">type racing</a></strong>  </td>
+  </tr>
+</tbody>
+
+</table>
+</div>
+
+{% endblock content %}

@@ -3,7 +3,7 @@
   <div class="border-end border-warning h-100">
     <div class="text-center">
       <img
-        src="{% static 'core/images/Photo.jpg' %}"
+        src="{% static 'core/images/home-image.jpeg' %}"
         alt="ProfilePic"
         class="img-fluid rounded-circle mt-5"
         width="100px"
@@ -14,11 +14,22 @@
     <hr class="border border-light" />
     <nav class="nav flex-column text-center">
       <a href="{% url 'home' %}" class="nav-link {{home}}">Home</a>
-      <a href="{% url 'education' %}" class="nav-link {{education}}"
-        >Education</a
-      >
-      <a href="{% url 'achieve' %}" class="nav-link {{skill}}">Skills</a>
-      <a href="{% url 'contact' %}" class="nav-link {{contact}}">Contact</a>
+      <a href="{% url 'education' %}" class="nav-link {{education}}">Education</a>
+      <a href="{% url 'projects' %}" class="nav-link {{projects}}">Projects</a>
+      <a href="{% url 'achievements' %}" class="nav-link {{achievements}}">Achievements</a>
+      <a href="{% url 'skills' %}" class="nav-link {{skills}}">Skills</a>
+      <a href="{% url 'certifications' %}" class="nav-link {{certifications}}">Certifications</a>
     </nav>
+    <div class="text-center mt-5">
+      <a href="mailto:raiprajwal.paul@gmail.com" target="_blank"
+        ><i class="fas fa-envelope i-color fa-lg mx-1"></i
+      ></a>
+      <a href="https://www.linkedin.com/in/prajwal-rai-1862841b2/" target="_blank"
+        ><i class="fab fa-linkedin i-color fa-lg mx-1"></i
+      ></a>
+      <a href="https://github.com/prajwal-5" target="_blank"
+        ><i class="fab fa-github i-color fa-lg mx-1"></i
+      ></a>
+    </div>
   </div>
 </div>
