@@ -8,27 +8,27 @@
 
 1. Home Page:
 
-    ![home page image](resources/home-page.png)
+    ![home page image](resources/home-page.PNG)
 
 2. Education Page:
 
-    ![education page image](resources/education.png)
+    ![education page image](resources/education.PNG)
 
 3. Projects Page:
 
-    ![projects page](resources/projects.png)
+    ![projects page](resources/projects.PNG)
 
 4. Achievemenents Page:
 
-    ![achievements page](resources/achievements-page.png)
+    ![achievements page](resources/achievements-page.PNG)
 
 5. Skills Page:
 
-    ![Skills page](resources/skills-page.png)
+    ![Skills page](resources/skills-page.PNG)
 
 6. Certifications Page:
 
-    ![Certifications page](resources/certifications-page.png)
+    ![Certifications page](resources/certifications-page.PNG)
 
 
 Hope you like my profile. Suggestions are welcome.
