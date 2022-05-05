@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from .models import Project, Achievement, Certification
 
 # HOME PAGE
 def home_page(req):
@@ -12,13 +13,13 @@ def education(req):
 
 # Projects page
 def projects(req):
-    context={'projects':'active'}
-    return render(req, "projects/projects.html", context)
+    data = Project.objects.all()
+    return render(req, "projects/projects.html", {'projects':'active', 'data': data})
 
 # Achievements page
 def achieve(req):
-    context={'achievements':'active'}
-    return render(req, "achievements/achieve.html", context)
+    data = Achievement.objects.all()
+    return render(req, "achievements/achieve.html", {'achievements':'active', 'data': data})
 
 # Skills page
 def skills(req):
@@ -27,5 +28,5 @@ def skills(req):
 
 # Certifications page
 def certifications(req):
-    context={'certifications':'active'}
-    return render(req, "certifications/certifications.html", context)
+    data = Certification.objects.all()
+    return render(req, "certifications/certifications.html", {'certifications':'active', 'data': data})

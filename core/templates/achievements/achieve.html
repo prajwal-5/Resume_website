@@ -3,68 +3,21 @@
   <h1 class="text-warning border-bottom mb-3">Achievements</h1>
   
   <div class="mx-5 my-5 ">
-    <div class="accordion accordion-flush" id="accordionFlushExample">
-      <div class="accordion-item bg-dark text-white">
-        <h2 class="accordion-header" id="flush-headingOne">
-          <button class="accordion-button collapsed " type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-            <strong>FaceBook HackerCup</strong> 
-          </button>
-        </h2>
-        <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-          <div class="accordion-body">
-            <ul>
-              <li>Online qualification round: Rank: <strong>10185/34585</strong> </li>
-              <li>Round 1: Rank: <strong>7191/12692</strong></li>
-            </ul>
-            <a target="_blank" href="https://www.facebook.com/codingcompetitions/hacker-cup/2021/certificate/853546312202568" class="btn btn-success ">Checkout</a>
+    <div class="accordion" id="accordionPanelsStayOpenExample">
+      
+      {% for achievement in data %}
+      <div class="list-group my-3">
+        <a href="{{achievement.link}}" target="_blank" class="list-group-item list-group-item-action " aria-current="true">
+          <div class="d-flex w-100 justify-content-between">
+            <h5 class="mb-1">{{achievement.name}}</h5>
+            <small class="badge bg-primary rounded-pill">{{achievement.rank}}</small>
           </div>
-        </div>
+          <p class="mb-1">{{achievement.description}}</p>
+        </a>
       </div>
-      <div class="accordion-item bg-dark text-white">
-        <h2 class="accordion-header" id="flush-headingTwo">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-            <strong>ACM-ICPC</strong>
-          </button>
-        </h2>
-        <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-          <div class="accordion-body"><ul>
-            <li>ACM-ICPC Regionalist (Gwalior- Pune regions) 2021</li>
-            <li>Team: Unstack, Rank: <strong>474, Honorable mention</strong></li>
-          </ul>
-          <a target="_blank" href="https://icpc.global/ICPCID/6LIVRK7SKA8O" class="btn btn-success ">Checkout</a>
-        </div>
-      </div>
-      <div class="accordion-item bg-dark text-white">
-        <h2 class="accordion-header" id="flush-headingThree">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-            <strong>CodeChef</strong>
-          </button>
-        </h2>
-        <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-          <div class="accordion-body"><ul>
-            <li>Codechef: <strong>3 star, 1619(highest rating)</strong> </li>
-            <li>CodeChef Starters 13 Div 3 rank:  <strong>406/5858+</strong></li>
-            <li>AlgoManiac- Code for Future Div 3 rank: <strong>485/4550+</strong> </li>
-          </ul>
-          <a target="_blank" href="https://www.codechef.com/users/prajwal_2002" class="btn btn-success ">Checkout</a>
-        </div>
-      </div>
-      <div class="accordion-item bg-dark text-white">
-        <h2 class="accordion-header" id="flush-headingThree">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
-            <strong>LeetCode</strong>
-          </button>
-        </h2>
-        <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
-          <div class="accordion-body"><ul>
-            <li> Practiced <strong>150+ problems</strong> </li>
-            <li>Solved <strong>50+ medium level</strong></li>
-          </ul>
-          <a target="_blank" href="https://leetcode.com/prajwal_2002/" class="btn btn-success ">Checkout</a>
-        </div>
-      </div>
+      {% endfor %}
+      
     </div>
   </div>
-
 </div>
 {% endblock content %}
