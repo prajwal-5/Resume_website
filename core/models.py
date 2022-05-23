@@ -7,7 +7,6 @@ class Project(models.Model):
     tools = models.CharField(max_length=500)
     description = models.CharField(max_length=2000)
     link = models.URLField(max_length=5000)
-    glimpse = models.ImageField(upload_to="Project_Images")
 
 
 class Achievement(models.Model):

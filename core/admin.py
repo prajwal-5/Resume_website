@@ -4,7 +4,7 @@ from .models import Project, Achievement, Certification
 
 @admin.register(Project)
 class ProjectAdmin(admin.ModelAdmin):
-    list_display = ['id', 'name', 'tools', 'link', 'glimpse']
+    list_display = ['id', 'name', 'tools', 'link']
 
 
 @admin.register(Achievement)

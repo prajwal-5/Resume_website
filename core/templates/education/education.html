@@ -2,8 +2,109 @@
 
 <div class="container mt-3 ">
 
-  <h1 class="text-warning mb-5 border-bottom">Education</h1>
+  <h1 class="text-warning mb-4 border-bottom ">Education</h1>
 
+  <div class="container">
+    <div class="row">
+        <div class="col-sm-4 my-5 mx-4 " style="width: 20rem;">
+          <div class="card border-warning" style="border: solid;" >
+            <img class="card-img-top border-warning" style="border-bottom: solid" src="{% static 'education/highschool.png' %}" alt="high school image">
+            <div class="card-body bg-dark text-white">
+              <h2 class="card-title">10<sup>th</sup> Standard</h2>
+              <br>
+              <table>
+                <tr>
+                  <td style="font-weight: bold;" >Board:</td>
+                  <td style="padding-left: 1rem;">CBSE</td>
+                </tr>
+                <tr>
+                  <td style="font-weight: bold;">Year:</td>
+                  <td style="padding-left: 1rem;">2016</td>
+                </tr>  
+                <tr>
+                  <td style="font-weight: bold;">CGPA:</td>
+                  <td style="padding-left: 1rem;"><strong> 9.4/10    <i>(89.3%)</i> </strong></td>
+                </tr>  
+                <tr>
+                  <td style="font-weight: bold;">School:</td>
+                  <td style="padding-left: 1rem;">Kendriya Vidyalaya AFS Thane</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="col-sm-4 my-5 mx-4" style="width: 20rem;">
+          <div class="card border-warning" style="border: solid;" >
+            <img class="card-img-top border-warning" style="border-bottom: solid" src="{% static 'education/secondaryschool.png' %}" alt="secondary school image">
+            <div class="card-body bg-dark text-white">
+              <h2 class="card-title">12<sup>th</sup> Standard</h2>
+              <br>
+              <table>
+                <tr>
+                  <td style="font-weight: bold;">Board:</td>
+                  <td style="padding-left: 1rem;">CBSE</td>
+                </tr>
+                <tr>
+                  <td style="font-weight: bold;">Year:</td>
+                  <td style="padding-left: 1rem;">2018</td>
+                </tr>  
+                <tr>
+                  <td style="font-weight: bold;">CGPA:</td>
+                  <td style="padding-left: 1rem;"> <strong>82.6</strong> </td>
+                </tr>  
+                <tr>
+                  <td style="font-weight: bold;">School:</td>
+                  <td style="padding-left: 1rem;">Kendriya Vidyalaya AFS Sulur</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+
+
+
+
+        <div class="col-sm-4 my-3 mx-4" style="width: 20rem;">
+          <div class="card border-warning" style="border: solid;">
+            <img class="card-img-top border-warning" style="border-bottom: solid" src="{% static 'education/university.png' %}" alt="university image">
+            <div class="card-body bg-dark text-white">
+              <h2 class="card-title">Engineering</h2>
+              <br>
+              <table>
+                <tr>
+                  <td style="font-weight: bold;">Stream:</td>
+                  <td style="padding-left: 1rem;">Computer Science and Engineering</td>
+                </tr>
+                <tr>
+                  <td style="font-weight: bold;">Year:</td>
+                  <td style="padding-left: 1rem;">2019-2023</td>
+                </tr>  
+                <tr>
+                  <td style="font-weight: bold;">CGPA:</td>
+                  <td style="padding-left: 1rem;"> <strong>8.08/10  <i>(80.8%)</i></strong> </td>
+                </tr>  
+                <tr>
+                  <td style="font-weight: bold;">College:</td>
+                  <td style="padding-left: 1rem;">University Institue of Engineering</td>
+                </tr>
+                <tr>
+                  <td style="font-weight: bold;">University:</td>
+                  <td style="padding-left: 1rem;">Chandigarh University</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+    </div>  
+
+
+
+    
+
+{% comment %} 
   <div class="row text-center mx-5 text-white">
       
       <div class="col-sm-6 ">
@@ -60,7 +161,7 @@
   </div>
   
   <div class="row text-center mx-5 text-white mt-5">
-    <div class="col-sm-6 offset-3 mt-4">
+    <div class="col-sm-6 mt-4">
         <div class="d-flex my-2">
           <i class="fas fa-university fa-2x mb-3 i-color mx-3"></i>
           <h3>Engineering</h3>
@@ -88,9 +189,10 @@
             <td>Chandigarh University</td>
           </tr>
         </table>
-  </div>
+  </div> {% endcomment %}
 
 </div>
   
 </div>
+
 {% endblock content %}

@@ -7,19 +7,18 @@
   <h1 class="text-warning mb-5 border-bottom">Projects</h1>
 
   <div class="container">
-    <div class="row">
+    <div class="row mx-5">
       {% for project in data %}
-        <div class="col-sm-4 my-5">
-          <div class="card" style="width: 18rem;">
-            <img class="card-img-top" src="{{ project.glimpse.url }}" alt="todo-cli project image">
-            <div class="card-body bg-dark text-white">
-              <h5 class="card-title">{{project.name}}</h5>
-              <p class="card-text"> <strong>Tools: {{project.tools}}</strong></p>
+          <div class="card mb-5 px-0 bg-dark text-white border-warning">
+            <div class="d-flex justify-content-between p-2 border-bottom border-warning bg-secondary">
+              <h4 class="card-title">{{project.name}}</h4>
+              <a href="{{project.link}}" target="_blank" class="btn btn-warning">Checkout</a>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title"><strong>Tools: {{project.tools}}</strong></h5>
               <p class="card-text">{{project.description}}</p>
-              <a href="{{project.link}}" target="_blank" class="btn btn-primary">Checkout</a>
             </div>
           </div>
-        </div>
       {% endfor %}
     </div>  
 </div> 

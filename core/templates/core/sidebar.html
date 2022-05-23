@@ -10,8 +10,11 @@
         height="100px"
       />
       <h1 class="text-white mt-3 newfont">Prajwal Rai</h1>
+      <a href="mailto:raiprajwal.paul@gmail.com" 
+      target="_blank"
+      class="text-white text-decoration-none nav-link">raiprajwal.paul@gmail.com</a>
     </div>
-    <hr class="border border-light" />
+    <hr class="border border-warning" />
     <nav class="nav flex-column text-center">
       <a href="{% url 'home' %}" class="nav-link {{home}}">Home</a>
       <a href="{% url 'education' %}" class="nav-link {{education}}">Education</a>
@@ -20,16 +23,65 @@
       <a href="{% url 'skills' %}" class="nav-link {{skills}}">Skills</a>
       <a href="{% url 'certifications' %}" class="nav-link {{certifications}}">Certifications</a>
     </nav>
-    <div class="text-center mt-5">
-      <a href="mailto:raiprajwal.paul@gmail.com" target="_blank"
-        ><i class="fas fa-envelope i-color fa-lg mx-1"></i
-      ></a>
-      <a href="https://www.linkedin.com/in/prajwal-rai-1862841b2/" target="_blank"
-        ><i class="fab fa-linkedin i-color fa-lg mx-1"></i
-      ></a>
-      <a href="https://github.com/prajwal-5" target="_blank"
-        ><i class="fab fa-github i-color fa-lg mx-1"></i
-      ></a>
+    <hr class="border border-warning" />
+
+
+    <div class="text-center mt-4 d-flex flex-wrap justify-content-center">
+
+      <div class="mx-2 my-2">
+        <a href="mailto:raiprajwal.paul@gmail.com" target="_blank">
+        <img 
+        class="bg-light p-1 rounded-circle icon" 
+        style="width: 40px; height:40px;" 
+        src="{% static 'core/images/email.png' %}" 
+        alt="leetcode icon"></a>
+      </div>
+
+      <div class="mx-2 my-2">
+        <a href="https://leetcode.com/prajwal_2002/" target="_blank">
+        <img 
+        class="bg-light p-1 rounded-circle icon" 
+        style="width: 40px; height:40px;" 
+        src="{% static 'core/images/leetcode.png' %}" 
+        alt="leetcode icon"></a>
+      </div>
+
+      <div class="mx-2 my-2">
+        <a href="https://www.codechef.com/users/prajwal_2002" target="_blank">
+        <img 
+        class="bg-light p-1 rounded-circle icon" 
+        style="width: 40px; height:40px;" 
+        src="{% static 'core/images/codechef.png' %}" 
+        alt="leetcode icon"></a>
+      </div>
+
+      <div class="mx-2 my-2">
+        <a href="https://codeforces.com/profile/praj_2002" target="_blank">
+        <img 
+        class="bg-light p-1 rounded-circle icon" 
+        style="width: 40px; height:40px;" 
+        src="{% static 'core/images/codeforces.png' %}" 
+        alt="leetcode icon"></a>
+      </div>
+
+      <div class="mx-2 my-2">
+        <a href="https://www.linkedin.com/in/prajwal-rai-1862841b2/" target="_blank">
+        <img 
+        class="bg-light p-1 rounded-circle icon" 
+        style="width: 40px; height:40px;" 
+        src="{% static 'core/images/linkedin.png' %}" 
+        alt="leetcode icon"></a>
+      </div>
+
+      <div class="mx-2 my-2">
+        <a href="https://github.com/prajwal-5" target="_blank">
+        <img 
+        class="bg-light p-1 rounded-circle icon" 
+        style="width: 40px; height:40px;" 
+        src="{% static 'core/images/github.png' %}" 
+        alt="leetcode icon"></a>
+      </div>
+      
     </div>
   </div>
 </div>

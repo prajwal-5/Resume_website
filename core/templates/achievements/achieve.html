@@ -2,22 +2,20 @@
 <div class="container mt-3">
   <h1 class="text-warning border-bottom mb-3">Achievements</h1>
   
-  <div class="mx-5 my-5 ">
-    <div class="accordion" id="accordionPanelsStayOpenExample">
-      
+  <div class="mx-5 my-5 ">     
       {% for achievement in data %}
-      <div class="list-group my-3">
-        <a href="{{achievement.link}}" target="_blank" class="list-group-item list-group-item-action " aria-current="true">
-          <div class="d-flex w-100 justify-content-between">
-            <h5 class="mb-1">{{achievement.name}}</h5>
-            <small class="badge bg-primary rounded-pill">{{achievement.rank}}</small>
-          </div>
-          <p class="mb-1">{{achievement.description}}</p>
-        </a>
+      <div class="card mb-5 px-0 bg-dark text-white border-warning mx-5">
+        <div class="d-flex justify-content-between p-2 border-bottom border-warning bg-secondary">
+          <h4 class="card-title">{{achievement.name}}</h4>
+          <a href="{{achievement.link}}" target="_blank" class="btn btn-warning">Checkout</a>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title"><strong>Rank: {{achievement.rank}}</strong></h5>
+          <p class="card-text">{{achievement.description}}</p>
+        </div>
       </div>
       {% endfor %}
       
-    </div>
   </div>
 </div>
 {% endblock content %}

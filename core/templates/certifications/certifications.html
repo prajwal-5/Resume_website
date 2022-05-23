@@ -2,7 +2,28 @@
 
 <div class="container mt-3">
   <h1 class="text-warning mb-5 border-bottom">Certifications</h1>
-  <div class="mx-5 my-5">
+
+  
+  <div class="mx-5 my-5 text-center">    
+    <div class="d-flex flex-wrap ">
+      {% for achievement in data %}
+      <div class="card mb-5 px-0 bg-dark text-white border-warning mx-5" style="width:400px; margin:auto;">
+        <div class="p-2 border-bottom border-warning bg-secondary">
+          <h4 class="card-title">{{achievement.name}}</h4>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title"><strong>Rank: {{achievement.rank}}</strong></h5>
+          <p class="card-text">{{achievement.description}}</p>
+        </div>
+        <div class="p-2 border-bottom border-warning bg-secondary text-center">
+          <a href="{{achievement.link}}" target="_blank" class="btn btn-warning">Checkout</a>
+        </div>
+      </div>
+      {% endfor %}
+    </div>  
+  </div>
+
+  {% comment %} <div class="mx-5 my-5">
     {% for certificate in data %}
       <div class="card bg-dark text-white my-5 mx-5">
         <div class="card-body">
@@ -13,5 +34,7 @@
       </div>
     {% endfor %}
 
-  </div>
+  </div> {% endcomment %}
+</div>
+
 {% endblock content %}
