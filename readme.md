@@ -1,10 +1,8 @@
-# Resume Website [(Checkout)](http://prajwal2000.pythonanywhere.com/)
+# Resume Website [(Checkout)](https://prajwal-rai-e-resume.herokuapp.com/)
 
 ### This is a personal project and contains information regarding my professional career
 
 #### Here is a glimpse of it:
-
-![Glimpse](resources/glimpse.gif)
 
 1. Home Page:
 
@@ -30,5 +28,22 @@
 
     ![Certifications page](resources/certifications-page.PNG)
 
+7. Admin Panel:
+
+    ![Admin Panel](resources/admin-page.PNG)
+
+6. Certifications Table:
+
+    ![Certifications table](resources/certifications-table.PNG)
+
+
+6. Projects Table:
+
+    ![Projects table](resources/projects-table.PNG)
+
+
+6. Achievemenents Table:
+
+    ![Achievemenents table](resources/achievements-table.PNG)
 
 Hope you like my profile. Suggestions are welcome.
